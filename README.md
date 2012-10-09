@@ -1,16 +1,16 @@
 puppet-dnsfix
 =============
 
-fix / speedup dns-resolution via resolvconf.d
+fix / speedup dns-resolution via resolvconf.d   
 
-best applied in a "pre"-main stage
+best applied in a "pre"-main stage   
 
-class stages {
-  stage { 'pre': before => Stage['main'] }
-}
+class stages {   
+  stage { 'pre': before => Stage['main'] }   
+}   
 
 
-in your instance declaration:
+in your instance declaration:   
 
-include stages
-class {'dnsfix': stage => pre; }
+include stages   
+class {'dnsfix': stage => pre; }   
