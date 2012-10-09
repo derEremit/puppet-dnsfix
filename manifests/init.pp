@@ -5,7 +5,7 @@ class dnsfix {
     group   => root,
     mode    => 644,
     source => "puppet:///modules/dnsfix/head",
-    notify => Exec["reload-varnish"],
+    notify => Exec["reload-resolvconf"],
   }
 
   exec { "reload-resolvconf":
